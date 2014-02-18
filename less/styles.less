@@ -1,1 +1,26 @@
-﻿ 
+﻿@color-green: green;
+@color-blue: blue;
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+#header {
+  border:2px solid green;
+  width:200px;
+  height:100px;
+  color: @color-green;
+  .rounded-corners;
+}
+
+#footer{
+  #header;
+  color:@color-blue;
+  .rounded-corners(20px);
+}
+
+h2 {
+  color: @color-green;
+}
